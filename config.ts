@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join } from "node:path";
 
-const CONFIG_PATH = join(homedir(), ".pi", "agent", "searxng.json");
+const CONFIG_PATH = join(homedir(), ".pi", "agent", "settings.json");
 
 export interface Config {
   searxngUrl: string;
