@@ -11,24 +11,24 @@ SearXNG web search extension for [Pi](https://github.com/badlogic/pi-mono) with 
 ## Installation
 
 ```bash
-pi install npm:pi-searxng
+pi install git:rizrmd/pi-searxng
 ```
 
 Or try without installing:
 
 ```bash
-pi -e npm:pi-searxng
+pi -e git:rizrmd/pi-searxng
 ```
 
 ## Configuration
 
-Create `~/.pi/searxng.json`:
+Create `~/.pi/agent/settings.json`:
 
 ```json
 {
+  ...
   "searxngUrl": "http://localhost:8080",
-  "timeoutMs": 30000,
-  "maxResults": 10
+   ...
 }
 ```
 
